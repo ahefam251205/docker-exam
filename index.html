@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Application pour l' Exam Docker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .student-info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        footer {
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 Application Dockerisée</h1>
+        
+        <div class="student-info">
+            <p><strong>Étudiant :</strong> ANDRIAMAHEFATIANA Tiavina Niaina</p>
+            <p><strong>Classe :</strong> L1C  INFORMATIQUE</p>
+	 <p><strong>MATRICULE :</strong> 228>
+            <p><strong>Exam :</strong> Docker - 2025</p>
+        </div>
+        
+        <p>Cette application est conteneurisée avec Docker et Docker Compose</p>
+        
+        <div class="features">
+            <div class="feature">
+                <strong>🚀 Docker</strong>
+                <p>Conteneurisation</p>
+            </div>
+            <div class="feature">
+                <strong>📦 Nginx</strong>
+                <p>Serveur Web</p>
+            </div>
+            <div class="feature">
+                <strong>⚡ Live</strong>
+                <p>En production</p>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="showMessage()">
+            Tester l'Application
+        </button>
+        
+        <button class="btn" onclick="showDockerInfo()" style="background: #28a745;">
+            Info Docker
+        </button>
+        
+        <footer>
+            <p>Déployé avec Docker Compose | © 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('🎉 Bravo ! Votre application Docker fonctionne parfaitement !\n\n✅ Docker : Actif\n✅ Nginx : En marche\n✅ Application : Opérationnelle');
+        }
+        
+        function showDockerInfo() {
+            alert('🐳 Information Docker :\n\n• Conteneur : Nginx Alpine\n• Port : 8080 → 80\n• Statut : En cours d\'exécution\n• Docker Compose : Actif');
+        }
+    </script>
+</body>
+</html>

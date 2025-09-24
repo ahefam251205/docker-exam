@@ -1,0 +1,18 @@
+services:
+  web-app:
+    image: nginx:alpine
+    container_name: mon-app-exam
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: unless-stopped
+
+  backup-server:
+    image: httpd:alpine
+    container_name: backup-server
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/usr/local/apache2/htdocs
+    restart: unless-stopped
