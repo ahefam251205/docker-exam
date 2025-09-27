@@ -25,4 +25,15 @@ Web App : http://localhost:8080 (Nginx)
 
 Backup : http://localhost:8081 (Apache)
 
-text
+
+## 🔧 Commandes utiles
+
+```bash
+# Vérifier que tout fonctionne
+docker ps
+
+# Arrêter proprement
+docker-compose down
+
+# Voir ce qui se passe
+docker-compose logs
